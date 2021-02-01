@@ -78,6 +78,7 @@ main {
 
 .task {
   background: #f4f4f4;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
