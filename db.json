@@ -16,12 +16,12 @@
       "id": 4,
       "text": "Thesis Meeting",
       "day": "Feb 8th at 2:30p",
-      "reminder": true
+      "reminder": false
     },
     {
       "text": "Buy water heater",
-      "day": "Jan 31st 6pm",
-      "reminder": false,
+      "day": "today",
+      "reminder": true,
       "id": 5
     }
   ]

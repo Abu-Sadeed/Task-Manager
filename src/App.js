@@ -2,6 +2,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Task from './components/Task'
 import AddTask from './components/AddTask'
+import Circle from './components/Circle'
 import { useState, useEffect } from 'react'
 
 function App() {
@@ -74,18 +75,21 @@ function App() {
   }
 
   return (
+    <main>
     <div className='container' >
       <Header onAdd={() => setShowAddTask(!showAddTask)} showAddTask={showAddTask}/>
-      {
-        showAddTask && <AddTask onAdd={addTask}/>
-      }
       
-      {
-        tasks.length > 0 ? <Task tasks={tasks} action={deleteTask} onToggle={toggleReminder}/> : 'No tasks remaining!'
-      }
+      {showAddTask && <AddTask onAdd={addTask}/>}
+      
+      {tasks.length > 0 ? <Task tasks={tasks} action={deleteTask} onToggle={toggleReminder}/> : 'No tasks remaining!'}
+      
       <Footer/>
       
     </div>
+    <Circle bottom='5%' right='15%' height='15vh' width='15vh'/>
+    <Circle bottom='22%' right='10%' height='10vh' width='10vh'/>
+    <Circle bottom='35%' right='9%' height='5vh' width='5vh'/>
+    </main>
   )
 }
 

@@ -8,16 +8,38 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-  max-width: 500px;
-  margin: 30px auto;
+  min-width: 40%;
+  margin: 10px auto;
   overflow: auto;
-  min-height: 300px;
-  border: 1px solid steelblue;
+  min-height: 40vh;
+  border: 1px;
   padding: 30px;
   border-radius: 5px;
+  background: white;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  z-index: 5;
+  backdrop-filter: blur(2rem);
+}
+
+.circle1{
+  background: white;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+
 }
 
 .header {
